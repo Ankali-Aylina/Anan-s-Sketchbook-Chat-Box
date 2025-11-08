@@ -28,3 +28,16 @@
 
 ## 另外的分支
 [增加了表情差分功能的分支, 暂不支持图片的插入](https://github.com/WrightHua/Anan-s-Sketchbook-Chat-Box/tree/main)
+
+## 新增打包配置
+- 使用命令启动打包程序：
+```python
+python -m venv .venv            #创建环境
+.venv/Scripts/activate          #启动环境
+pip install -r requirements.txt #安装依赖
+pip install pyinstaller         #安装打包器
+pyinstaller build.spec --clean  #启动打包器
+```
+- 最后你可以在dist文件夹找到生成的exe
+- 注意exe需要配合dist文件夹下的内容才能使用。
+- 直接点击exe即可启动
